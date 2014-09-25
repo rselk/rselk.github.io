@@ -36,7 +36,6 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 
     rails generate job ResizeImage 
 
-```
 
 ##### #app/jobs/resize_image.rb
 

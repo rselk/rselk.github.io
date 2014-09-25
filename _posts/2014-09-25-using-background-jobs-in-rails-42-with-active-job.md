@@ -36,6 +36,8 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 
     rails generate job ResizeImage 
 
+```
+
 ##### #app/jobs/resize_image.rb
 
     class ResizeImage < ActiveJob::Base
@@ -57,11 +59,11 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 
 ####Enqueue the Job
 
-Jobs can be added to the job queue in both Controllers and Models. We can add a job to the queue by:
+Jobs can be added to the job queue from anywhere. We can add a job to the queue by:
 
-    ResizeImage.enqueue "http://example.com/ex.png"
+    ResizeImage.perform_later "http://example.com/ex.png"
 
 At this point, sidekiq will run the job for us. If the job for some reason fails, sidekiq will keep on trying.
 
 ###Conclusion
-With the merge of Active Job into Rails 4.2 we can expect to see more Gems taking advantage of background jobs. They are a very useful feature which can make your apps faster and more manageable. 
+With the addition of Active Job into Rails 4.2 we can expect to see more Gems taking advantage of background jobs. They are a very useful feature which can make your apps faster and more manageable. 

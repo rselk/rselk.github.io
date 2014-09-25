@@ -36,12 +36,6 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 
     rails generate job ResizeImage 
 
-``` ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
 ##### #app/jobs/resize_image.rb
 
     class ResizeImage < ActiveJob::Base

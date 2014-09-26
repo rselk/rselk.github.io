@@ -42,11 +42,12 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 
 
 ##### #app/jobs/resize_image.rb
-
-
-
-
 {% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+~~~ruby
   class ResizeImage < ActiveJob::Base
     # Set the Queue as Default
     queue_as :default 
@@ -62,7 +63,7 @@ We can use the generator to create a new job. We can add the --queue quantifier 
       image.write output_path(img_url)
     end
   end
-{% endhighlight %}
+~~~
 
 ####Enqueue the Job
 

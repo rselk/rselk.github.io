@@ -30,37 +30,44 @@ In this example we will open an external image from a provided url, resize this 
 ####Setting the adapter
 We need to specify which queuing backend we want to use. This choice will depend on your apps needs. If we leave this option unset it will default to :inline which will simply process the jobs as it gets them.
 
+~~~ ruby
     Rails.application.config.active_job.queue_adapter = :sidekiq
+~~~
 
 We can use the generator to create a new job. We can add the --queue quantifier if we wish to specific a non default queue.
 
+~~~
     rails generate job ResizeImage 
+~~~
 
 
 ##### #app/jobs/resize_image.rb
 
-    class ResizeImage < ActiveJob::Base
-      # Set the Queue as Default
-      queue_as :default 
+~~~ ruby
+  class ResizeImage < ActiveJob::Base
+    # Set the Queue as Default
+    queue_as :default 
 
-      def perform(img_url)
-        # Open the image into memory
-        image = MiniMagick::Image.open(img_url)
+    def perform(img_url)
+      # Open the image into memory
+      image = MiniMagick::Image.open(img_url)
 
-        # Change the image size
-        image.resize "100x100"
+      # Change the image size
+      image.resize "100x100"
 
-        # Write the resulting image
-        image.write output_path(img_url)
-      end
+      # Write the resulting image
+      image.write output_path(img_url)
     end
-
+  end
+~~~
 
 ####Enqueue the Job
 
 Jobs can be added to the job queue from anywhere. We can add a job to the queue by:
 
+~~~ ruby
     ResizeImage.perform_later "http://example.com/ex.png"
+~~~
 
 At this point, sidekiq will run the job for us. If the job for some reason fails, sidekiq will keep on trying.
 

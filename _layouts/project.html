@@ -1,10 +1,16 @@
+---
+theme :
+  name : bootstrap-3
+---
+{% include JB/setup %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Ryan Selk</title>
+    <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -13,7 +19,8 @@
 
     <!-- Bootstrap styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/main.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}//css/main.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/mine.css" rel="stylesheet">
     <!-- Optional theme -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Sticky Footer -->
@@ -21,8 +28,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
-    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,57 +57,17 @@
           <div id="photo-header" class="text-center">
             <!-- PHOTO (AVATAR) -->
               <h1><strong>Ryan Selk</strong><small> Software Developer</small></h1>
-                 <a href="http://ryanselk.com">HOME</a> | <a href="http://ryanselk.com/about.html">ABOUT</a> | <a href="http://ryanselk.com/archive.html">ARCHIVE</a>
+               <a href="http://ryanselk.com">HOME</a> | <a href="http://ryanselk.com/about.html">ABOUT</a> | <a href="http://ryanselk.com/archive.html">ARCHIVE</a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-7">
-
-
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
 
            {{ content }}
 
-
-
-
         </div>
-        <div class="col-xs-12 col-sm-5">
-          <!-- CONTACT -->
-          <div class="box clearfix">
-            <h2>Contact</h2>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><a href="mailto:ryanselk@gmail.com">ryanselk@gmail.com</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
-              <div class="title pull-right">Github</div>
-              <div class="description pull-right"><a href="https://github.com/rselk">http://github.com/rselk</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-              <div class="title pull-right">Linkedin</div>
-              <div class="description pull-right"><a href="http://ca.linkedin.com/in/rselk">http://ca.linkedin.com/in/rselk</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
-              <div class="title pull-right">Twitter</div>
-              <div class="description pull-right"><a href="https://twitter.com/rselk">http://twitter.com/rselk</a>
-
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-skype fa-fw"></span></div>
-              <div class="title pull-right">Skype</div>
-              <div class="description pull-right">
-             <a href="skype:ryan.selk?chat">ryan.sek</a> 
-              </div>
-            </div>
-          </div>
-        </div>
-                
+      </div>
 
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->

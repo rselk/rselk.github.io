@@ -7,6 +7,7 @@ tags: []
 ---
 
 #Terminals in Vim With Neovim
+[![My Vim Setup](http://i.imgur.com/UMTi3cF.png)](http://i.imgur.com/rpwqMTx.png "Full Size")
 
 I have been using Vim + [Tmux](http://tmux.sourceforge.net/ "Tmux") for years but recently my primary use case for using Tmux has been replaced with [Neovim](http://neovim.io/ "Neovim"). When running tests I am a fan of being able to split my screen so I can view the specs alongside code. Tmux worked well for this, however it comes with a few disadvantages. Pasting code between Tmux and Vim panes required use of the system register which is a pain. I could not use the power of Vim resisters on my console output. The other big disadvantage of tmux is that switching between tmux and vim panes can be difficult. Most setups have separate keys for switching between windows within vim and switching between windows in tmux. 
 

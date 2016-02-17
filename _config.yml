@@ -1,7 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 #
-markdown: kramdown
 
 permalink: /:categories/:year/:month/:day/:title 
 
@@ -10,11 +9,11 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : Ryan Selk
+tagline: None
 author :
-  name : Name Lastname
-  email : blah@email.test
+  name : Ryan Selk
+  email : ryanselk@gmail.com
   github : username
   twitter : username
   feedburner : feedname
@@ -27,9 +26,12 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://rselk.github.io
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

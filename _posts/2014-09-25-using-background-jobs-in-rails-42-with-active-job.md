@@ -19,15 +19,15 @@ Jumping into background jobs can be a little daunting for someone new to rails. 
 ### Background Job Candidates
 We want our background jobs to have no additional effects if we call them multiple times with the same parameters. This is the concept of idempotency. If we are choosing to use Sidekiq we must also consider if the gems we are using are threadsafe.
 
-#####Common Background Job Use Cases
+##### Common Background Job Use Cases
 - 3rd Party APIs - Working with external services. 
 - Computational Intensive Work - Such as Solving equations or image processing.
 - Sending Emails - We don't want to keep the user waiting for an email to send.
 
-###An Active Job Example
+### An Active Job Example
 In this example we will open an external image from a provided url, resize this image, and save it to disk. I will also be using the minimalistic and quick MiniMagick gem.
 
-####Setting the adapter
+#### Setting the adapter
 We need to specify which queuing backend we want to use. This choice will depend on your apps needs. If we leave this option unset it will default to :inline which will simply process the jobs as it gets them.
 
 ~~~ ruby
@@ -60,7 +60,7 @@ We can use the generator to create a new job. We can add the --queue quantifier 
   end
 ~~~
 
-####Enqueue the Job
+#### Enqueue the Job
 
 Jobs can be added to the job queue from anywhere. We can add a job to the queue by:
 
@@ -70,5 +70,5 @@ Jobs can be added to the job queue from anywhere. We can add a job to the queue 
 
 At this point, sidekiq will run the job for us. If the job for some reason fails, sidekiq will keep on trying.
 
-###Conclusion
+### Conclusion
 With the addition of Active Job into Rails 4.2 we can expect to see more Gems taking advantage of background jobs. They are a very useful feature which can make your apps faster and more manageable. 

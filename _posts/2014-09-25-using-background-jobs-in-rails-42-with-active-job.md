@@ -6,7 +6,7 @@ category:
 tags: []
 ---
 
-#Background Jobs in Rails 4.2 with Active Job 
+# Background Jobs in Rails 4.2 with Active Job 
 
 Later today the second beta of Rails 4.2 will be released. Rails 4.2 introduces Active Job. Background jobs have been a part of Rails apps for years, but they have usually been implemented through a gem such as [Sidekiq](https://github.com/mperham/sidekiq "Sidekiq"), [Resque](https://github.com/resque/resque/ "Resque"), or [Delayed Job](https://github.com/collectiveidea/delayed_job "Delayed Job"). These gems can have differing APIs and the rails team has decided to implement a standard interface. Active Job is this uniform interface for interacting with these job runners. 
 

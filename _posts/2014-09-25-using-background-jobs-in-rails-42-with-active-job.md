@@ -41,10 +41,10 @@ We can use the generator to create a new job. We can add the --queue quantifier 
 ```
 
 
-##### #app/jobs/resize_image.rb
+##### app/jobs/resize_image.rb
 ```ruby
   class ResizeImage < ActiveJob::Base
-    # Set the Queue as Default
+    # Set the Queue as the Default
     queue_as :default 
 
     def perform(img_url)

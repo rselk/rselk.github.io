@@ -6,7 +6,7 @@ category:
 tags: []
 ---
 
-# Sidekiq
+# Idempotency in Sidekiq
 
 Sidekiq is a popular ruby gem used for background job processing. In a web application you often do not want to block the current thread while performing some task. It is commonly used for sending emails, notifications and performing work which the user is not expecting instant feedback. The important thing to remember that sidekiq jobs must be idempotent or you will run into problems.
 

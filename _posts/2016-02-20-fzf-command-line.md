@@ -1,12 +1,12 @@
 ---
 layout: ryan
-title: "FZF command-line fuzzy finder"
+title: "FZF Command-line Fuzzy Finder"
 description: ""
 category: 
 tags: []
 ---
 
-# FZF command-line fuzzy finder
+# FZF Command-line fuzzy finder
 
 [FZF](https://github.com/junegunn/fzf) has quickly become one of my all time favorite tools. I use FZF 100s of times per day. FZF has greatly increased my productivity. Simply, FZF is a fuzzy command line search tool. FZF has 3 main search modes file search (Ctrl-t), directory search (Alt-c) and command line history search (Ctrl-r). It's one of the first tools I recommend to people who are at least intermediate at the unix command line.
 

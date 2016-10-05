@@ -90,5 +90,5 @@ This concludes part 1 of this post. Stay tuned for part 2 which will get into Qu
 
 #### Update
 
-Part 2 is [HERE.](http://ryanselk.com/2016/10/01/legacy-rails-p2) Enjoy!
+Part 2 is [HERE.](http://ryanselk.com/2016/10/04/legacy-rails-p2) Enjoy!
 

@@ -8,7 +8,7 @@ tags: []
 
 # Working with legacy Rails
 
-Part 2
+### Part 2
 
 In [Part 1](http://ryanselk.com/2016/10/01/legacy-rails-p1) in this 2 part series of working with legacy rails applications I covered Metrics, Logging, Test suite optimization and the addition of a service layer. 
 

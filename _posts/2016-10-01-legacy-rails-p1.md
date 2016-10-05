@@ -8,7 +8,7 @@ tags: []
 
 # Working with legacy Rails
 
-Part 1
+### Part 1
 
 Ruby on Rails is over ten years old, with the huge surge of the language and framework in the late 2000s there are starting to be plenty of legacy rails apps out there. Dealing with a legacy rails app can be fairly frustrating to those who have not been working with the framework throughout that time. 
 

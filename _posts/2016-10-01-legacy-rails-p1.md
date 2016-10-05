@@ -81,10 +81,14 @@ Determine the actions which the model in question is actually involved in. For i
 
 The addition of services like this also have the huge bonus of being far easier to test. No more dealing with after_commit hooks not firing in your test suite!
 
-ActiveRecord callbacks are orden a huge smell in Rails codebases. They are very easy to add and often the first thing developers like to reach for. I need a very good reason to use a ActiveRecord callback. Why? Its 2016 Courage.
+ActiveRecord callbacks are orden a huge smell in Rails codebases. They are very easy to add and often the first thing developers like to reach for. I need a very good reason to use a ActiveRecord callback. Why? Its ~~2016~~ Courage.
 
 
 #### Stay Tuned
 
 This concludes part 1 of this post. Stay tuned for part 2 which will get into Query Optimization, Updating Ruby, Updating Rails, and dealing with Gem dependencies. 
+
+#### Update
+
+Part 2 is [HERE.](http://ryanselk.com/2016/10/01/legacy-rails-p2) Enjoy!
 

@@ -1,6 +1,6 @@
 ---
 layout: ryan
-title: "Query Parameter Validation with Grape"
+title: "Parameter Validation with Grape"
 description: ""
 category: 
 tags: []
@@ -13,7 +13,7 @@ img {
 }
 </style>
 
-# Query Parameter Validation with Grape
+# Parameter Validation with Grape
 
 A pain point I constantly deal with  when building Rails APIs is handling query parameter validation. There is no built in way to do this and I have seen many different hand rolled solutions. Often some Rails apps will just not preform validations at this level. I have revisited the Grape gem recently, a gem I have not used in several years. I find Grapes solution to this problem extremely elegant. 
 

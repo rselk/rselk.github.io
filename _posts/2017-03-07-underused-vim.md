@@ -17,9 +17,9 @@ img {
 
 I was first introduced to Vim 11 years ago by a Computer Science professor I was working for. He told me after I learned vim, I would be hooked. He was correct. Below are a couple of features I feel are often underused or even unknown to many vim users.
 
-## Vim Autocompletion
+## Vim Completion
 
-Vim has very powerful autocompletion commands. They are controlled with Ctrl-p which finds the previous match, and Ctrl-n which finds the next match. Vim can autocomplete many different things including lines and filepaths.
+Vim has very powerful completion commands. They are controlled with Ctrl-p which finds the previous match, and Ctrl-n which finds the next match. Vim can autocomplete many different things including lines and filepaths.
 
 ### Line Autocompletion
 
